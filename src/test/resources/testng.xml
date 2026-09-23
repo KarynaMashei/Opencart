@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OpenCart test suite">
+    <test name="Search tests">
+        <classes>
+            <class name="de.opencart.search.SearchTests"/>
+        </classes>
+    </test>
+    <test name="Category navigation tests">
+        <classes>
+            <class name="de.opencart.category.CategoryNavigationTests"/>
+        </classes>
+    </test>
+    <test name="Billing and delivery address tests">
+        <classes>
+            <class name="de.opencart.checkout.AddressValidationTests"/>
+        </classes>
+    </test>
+    <test name="Shipping and payment tests">
+        <classes>
+            <class name="de.opencart.checkout.ShippingPaymentTests"/>
+        </classes>
+    </test>
+    <test name="Product return tests">
+        <classes>
+            <class name="de.opencart.returns.ReturnRequestTests"/>
+        </classes>
+    </test>
+</suite>
