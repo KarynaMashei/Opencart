@@ -5,6 +5,12 @@ plugins {
 group = 'org.example'
 version = '1.0-SNAPSHOT'
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
 repositories {
     mavenCentral()
 }
@@ -15,7 +21,6 @@ dependencies {
 
     implementation("io.github.bonigarcia:webdrivermanager:6.3.4")
 
-    implementation("ch.qos.logback:logback-classic:1.6.3")
 }
 
 test {
